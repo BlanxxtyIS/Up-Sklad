@@ -12,6 +12,6 @@ class FourProduct: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        print("Сканер-Сканер")
+        title = "Сканер"
     }
 }
