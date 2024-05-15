@@ -9,6 +9,8 @@ import UIKit
 
 class CreateProductViewController: UIViewController {
     
+    // MARK: - Public Properties
+    // MARK: - Private Properties
     private let coreDataManager = CoreData()
     
     private lazy var newProductName: String = ""
@@ -16,6 +18,7 @@ class CreateProductViewController: UIViewController {
     private lazy var productName: UILabel = {
         let label = UILabel()
         label.text = "Наименование:"
+        label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -24,7 +27,7 @@ class CreateProductViewController: UIViewController {
         let search = UITextField()
         search.placeholder = "Введите наименование"
         search.layer.borderWidth = 1.0
-        search.layer.borderColor = UIColor.gray.cgColor
+        search.layer.borderColor = UIColor.systemGray.cgColor
         search.layer.cornerRadius = 5.0
         search.delegate = self
         // Создаем UIView для левого отступа
@@ -34,11 +37,11 @@ class CreateProductViewController: UIViewController {
         search.translatesAutoresizingMaskIntoConstraints = false
         return search
     }()
-    
-    
+
+    // MARK: - Initilaized
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor.systemBackground
         title = "Новый товар"
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(closeTapped))
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(createTapped))
@@ -46,6 +49,9 @@ class CreateProductViewController: UIViewController {
         setupUI()
     }
     
+    // MARK: - Public Methods
+    
+    // MARK: - Private Methods
     private func setupUI() {
         view.addSubview(productName)
         view.addSubview(productNameCreate)
@@ -71,6 +77,7 @@ class CreateProductViewController: UIViewController {
     }
 }
 
+// MARK: - UITextFieldDelegate
 extension CreateProductViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()  // Скрыть клавиатуру

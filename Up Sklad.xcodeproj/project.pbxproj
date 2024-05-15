@@ -11,13 +11,13 @@
 		F41D99212BEE56A0000A523B /* Core Data .swift in Sources */ = {isa = PBXBuildFile; fileRef = F41D99202BEE56A0000A523B /* Core Data .swift */; };
 		F43019F22BE12B3E009A8DB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43019F12BE12B3E009A8DB2 /* AppDelegate.swift */; };
 		F43019F42BE12B3E009A8DB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43019F32BE12B3E009A8DB2 /* SceneDelegate.swift */; };
-		F43019F62BE12B3E009A8DB2 /* TwoProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43019F52BE12B3E009A8DB2 /* TwoProduct.swift */; };
+		F43019F62BE12B3E009A8DB2 /* AllProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43019F52BE12B3E009A8DB2 /* AllProductViewController.swift */; };
 		F43019FB2BE12B40009A8DB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43019FA2BE12B40009A8DB2 /* Assets.xcassets */; };
 		F43019FE2BE12B40009A8DB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43019FC2BE12B40009A8DB2 /* LaunchScreen.storyboard */; };
 		F4301A0B2BE131A9009A8DB2 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4301A0A2BE131A9009A8DB2 /* TabBarViewController.swift */; };
-		F4301A0D2BE13278009A8DB2 /* OneProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4301A0C2BE13278009A8DB2 /* OneProduct.swift */; };
-		F4301A0F2BE133E0009A8DB2 /* ThreeProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4301A0E2BE133E0009A8DB2 /* ThreeProduct.swift */; };
-		F4301A112BE1342B009A8DB2 /* FourProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4301A102BE1342B009A8DB2 /* FourProduct.swift */; };
+		F4301A0D2BE13278009A8DB2 /* NewProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4301A0C2BE13278009A8DB2 /* NewProductViewController.swift */; };
+		F4301A0F2BE133E0009A8DB2 /* SearchProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4301A0E2BE133E0009A8DB2 /* SearchProductViewController.swift */; };
+		F4301A112BE1342B009A8DB2 /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4301A102BE1342B009A8DB2 /* ScanQRViewController.swift */; };
 		F434692C2BE163760017376A /* CreateProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F434692B2BE163760017376A /* CreateProductViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,14 +27,14 @@
 		F43019EE2BE12B3E009A8DB2 /* Up Sklad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Up Sklad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43019F12BE12B3E009A8DB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F43019F32BE12B3E009A8DB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F43019F52BE12B3E009A8DB2 /* TwoProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoProduct.swift; sourceTree = "<group>"; };
+		F43019F52BE12B3E009A8DB2 /* AllProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProductViewController.swift; sourceTree = "<group>"; };
 		F43019FA2BE12B40009A8DB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F43019FD2BE12B40009A8DB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F43019FF2BE12B40009A8DB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4301A0A2BE131A9009A8DB2 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		F4301A0C2BE13278009A8DB2 /* OneProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneProduct.swift; sourceTree = "<group>"; };
-		F4301A0E2BE133E0009A8DB2 /* ThreeProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeProduct.swift; sourceTree = "<group>"; };
-		F4301A102BE1342B009A8DB2 /* FourProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourProduct.swift; sourceTree = "<group>"; };
+		F4301A0C2BE13278009A8DB2 /* NewProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductViewController.swift; sourceTree = "<group>"; };
+		F4301A0E2BE133E0009A8DB2 /* SearchProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductViewController.swift; sourceTree = "<group>"; };
+		F4301A102BE1342B009A8DB2 /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
 		F434692B2BE163760017376A /* CreateProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProductViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,10 +89,10 @@
 			children = (
 				F4301A0A2BE131A9009A8DB2 /* TabBarViewController.swift */,
 				F434692B2BE163760017376A /* CreateProductViewController.swift */,
-				F4301A0C2BE13278009A8DB2 /* OneProduct.swift */,
-				F43019F52BE12B3E009A8DB2 /* TwoProduct.swift */,
-				F4301A0E2BE133E0009A8DB2 /* ThreeProduct.swift */,
-				F4301A102BE1342B009A8DB2 /* FourProduct.swift */,
+				F4301A0C2BE13278009A8DB2 /* NewProductViewController.swift */,
+				F43019F52BE12B3E009A8DB2 /* AllProductViewController.swift */,
+				F4301A0E2BE133E0009A8DB2 /* SearchProductViewController.swift */,
+				F4301A102BE1342B009A8DB2 /* ScanQRViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,11 +199,11 @@
 				F4301A0B2BE131A9009A8DB2 /* TabBarViewController.swift in Sources */,
 				F41D99212BEE56A0000A523B /* Core Data .swift in Sources */,
 				F41D991F2BEE5425000A523B /* CoreData.xcdatamodeld in Sources */,
-				F43019F62BE12B3E009A8DB2 /* TwoProduct.swift in Sources */,
-				F4301A112BE1342B009A8DB2 /* FourProduct.swift in Sources */,
+				F43019F62BE12B3E009A8DB2 /* AllProductViewController.swift in Sources */,
+				F4301A112BE1342B009A8DB2 /* ScanQRViewController.swift in Sources */,
 				F43019F22BE12B3E009A8DB2 /* AppDelegate.swift in Sources */,
-				F4301A0D2BE13278009A8DB2 /* OneProduct.swift in Sources */,
-				F4301A0F2BE133E0009A8DB2 /* ThreeProduct.swift in Sources */,
+				F4301A0D2BE13278009A8DB2 /* NewProductViewController.swift in Sources */,
+				F4301A0F2BE133E0009A8DB2 /* SearchProductViewController.swift in Sources */,
 				F43019F42BE12B3E009A8DB2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

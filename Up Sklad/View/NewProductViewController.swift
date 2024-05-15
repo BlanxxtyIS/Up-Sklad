@@ -7,14 +7,16 @@
 
 import UIKit
 
-class OneProduct: UIViewController {
+class NewProductViewController: UIViewController {
     
+    // MARK: - Public Properties
     var counter: Int = 0 {
         didSet {
             counterLabel.text = "\(counter)"
         }
     }
     
+    // MARK: - Private Properties
     private lazy var productName: UITextField = {
         let search = UITextField()
         search.placeholder = "Введите наименование"
@@ -95,13 +97,17 @@ class OneProduct: UIViewController {
         return label
     }()
     
+    // MARK: - Initilaized
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor.systemBackground
         title = "Новый товар"
         setupUI()
     }
     
+    // MARK: - Public Methods
+    
+    // MARK: - Private Methods
     @objc
     private func minusClickButton() {
         counter -= 1
@@ -158,7 +164,8 @@ class OneProduct: UIViewController {
     }
 }
 
-extension OneProduct: UITextFieldDelegate {
+// MARK: - UITextFieldDelegate
+extension NewProductViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

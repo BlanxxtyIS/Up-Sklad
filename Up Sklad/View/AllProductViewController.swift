@@ -7,8 +7,9 @@
 
 import UIKit
 
-class TwoProduct: UIViewController {
+class AllProductViewController: UIViewController {
     
+    // MARK: - Private Properties
     private lazy var emptyLabel: UILabel = {
         let label = UILabel()
         label.text = "Товар не найден"
@@ -25,14 +26,16 @@ class TwoProduct: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-
+    
+    // MARK: - Initialized
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor.systemBackground
         setupUI()
         title = "Список"
     }
     
+    // MARK: - Private Methods
     @objc
     private func createButtonTapped() {
         let createProduct = CreateProductViewController()

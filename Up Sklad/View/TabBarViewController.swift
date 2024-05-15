@@ -16,21 +16,21 @@ class TabBarViewController: UITabBarController {
     
     private func setupUI() {
         //первый экран
-        let oneProduct = OneProduct()
+        let oneProduct = NewProductViewController()
         let oneProductController = UINavigationController(rootViewController: oneProduct)
         oneProductController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "plusLogo"), tag: 0)
         
         //второй экран
-        let twoProduct = TwoProduct()
+        let twoProduct = AllProductViewController()
         let twoProductController = UINavigationController(rootViewController: twoProduct)
         twoProductController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "checkListLogo"), tag: 1)
         
         //третий экран
-        let threeProduct = ThreeProduct()
+        let threeProduct = SearchProductViewController()
         let threeProductController = UINavigationController(rootViewController: threeProduct)
         threeProductController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "searchLogo"), tag: 2)
         
-        let fourProduct = FourProduct()
+        let fourProduct = ScanQRViewController()
         let fourProductController = UINavigationController(rootViewController: fourProduct)
         fourProductController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "scanerLogo"), tag: 3)
         

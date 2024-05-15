@@ -7,8 +7,9 @@
 
 import UIKit
 
-class ThreeProduct: UIViewController {
+class SearchProductViewController: UIViewController {
     
+    // MARK: - Private Methods
     private lazy var productNameCreate: UITextField = {
         let search = UITextField()
         search.placeholder = "Введите наименование"
@@ -31,13 +32,15 @@ class ThreeProduct: UIViewController {
         return button
     }()
     
+    // MARK: - Initialized
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor.systemBackground
         title = "Поиск"
         setupUI()
     }
     
+    // MARK: - Private Methods
     @objc
     private func searchTap() {
         print("поиск поиск")
@@ -57,7 +60,8 @@ class ThreeProduct: UIViewController {
     }
 }
 
-extension ThreeProduct: UITextFieldDelegate {
+// MARK: - UITextField
+extension SearchProductViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()  // Скрыть клавиатуру
         return true
